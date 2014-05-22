@@ -1,0 +1,122 @@
+.container-lista-presente-bg{
+    background: url('../imagens/bg_lista_presente.jpg') repeat 0 0 transparent;
+}
+
+.container-lista-presente{
+    height: 474px;
+    position: relative;
+    width: 990px;
+    margin: 0 auto;
+}
+
+.logo-lista-presente{
+    display: block;
+    text-indent: -9999px;
+    background: url('../imagens/logo_lista.png') no-repeat 0 0 transparent;
+    width: 705px;
+    height: 328px;
+    position: absolute;
+    top: 0;
+    left: 5px;
+}
+
+.acoes-lista-presente{
+    overflow: hidden;
+    position: absolute;
+    bottom: 2px;
+    left: 70px;
+}
+
+.acoes-lista-presente a{
+    margin: 0 20px;
+    display: block;
+    float: left;
+}
+
+.container-encontrar-lista{
+    position: absolute;
+    top: 75px;
+    right: 0;
+}
+
+.container-encontrar-lista fieldset{
+    background: url('../imagens/bg_form_lista.png') no-repeat 0 0 transparent;
+    display: block;
+    border: 0 none;
+    padding: 70px 0 30px;
+    *width: 260px;
+    *height: 315px;
+}
+
+.container-encontrar-lista fieldset label{
+    color: #b6957b;
+    display: block;
+    text-align: left;
+    font-weight: normal;
+    margin: 13px 30px 0;
+    font-size: 13px;
+}
+
+.container-encontrar-lista fieldset input, .container-encontrar-lista fieldset select{
+    border: 1px solid #d2cec2;
+    background: #fff;
+    font-size: 11px;
+    display: block;
+    margin: 0 30px;
+    padding: 5px 2px;
+    width: 200px;
+    color: #666;
+}
+
+.container-encontrar-lista fieldset select{
+    width: 205px !important;
+}
+
+.container-encontrar-lista fieldset .buscar-lista{
+    display: block;
+    clear: both;
+    text-align: right;
+    float: right;
+    text-indent: -9999px;
+    background: url('../imagens/bt_buscar_lista.png') no-repeat 0 0 transparent;
+    width: 112px;
+    height: 40px;
+    color: transparent;
+    margin: 15px 30px 0 0;
+}
+.busca_erro{
+   text-align: left;
+    width: 305px;
+    background-color: #FFF5E1;
+    border: 1px solid #FCE7BB;
+    font-size: 12px;
+    margin: -50px 0 10px 0;
+}
+
+
+.busca_erro_conteudo{
+    padding: 10px 5px 10px 65px;
+    background-image: url('../imagens/erro.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+.busca_erro h2{
+    color: #444444;
+    font-size: 12px;
+    margin: 7px 0;
+}
+
+.busca_erro ul{
+    list-style: none;
+}
+
+.busca_erro ul li{
+    padding-left: 12px;
+    color: #7E7E7E;
+    font-size: 12px;
+    background-image: url('../imagens/seta_erro.gif');
+    background-repeat: no-repeat;
+    background-position: left 4px;
+    line-height: 20px;
+}

@@ -1,0 +1,76 @@
+.lista_convidados_titulo{
+    padding: 10px 5px 10px 5px;
+    background: url("../imagens/bg_lista_presente.jpg") repeat;
+    text-align: left;
+    margin: 50px 0 30px;
+    overflow: hidden;
+    border-bottom: 2px dashed #c2a48a;
+}
+
+.lista_convidados_titulo_conteudo{
+	float: left;
+        margin: 0 0 0 10px;
+        background: url('../imagens/ico_lista_presentes_convidados.png') no-repeat left center scroll transparent; 
+        padding: 10px 10px 10px 170px;
+}
+
+.lista_convidados_titulo_conteudo h4{
+
+}
+
+.lista_convidados_titulo_conteudo p{
+	font-size: 13px;
+	color: #5a5a5a;
+	font-family: "Trebuchet MS";    
+}
+
+
+.lista_convidados_conteudo fieldset{
+  border: none;
+  margin: 5px 0 0px 5px;
+  padding: 0 0 0 0px;
+  width: 550px;
+  clear: both;
+  display: block;
+  color: #666666;
+}
+
+.lista_convidados_conteudo fieldset label{
+  display: block;
+  margin: 8px 0 0px 0px;
+  color: #765d48;
+  float: left;
+    font-size: 13px;
+    font-family: "trebuchet ms";
+}
+
+.lista_convidados_conteudo fieldset label *{
+  vertical-align: middle;
+}
+
+.lista_convidados_conteudo fieldset label img{
+  margin-left: 3px;
+}
+
+
+.lista_convidados_conteudo fieldset label input{
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  width: 88%;
+  padding: 5px;
+  font-size: 11px;
+  color: #666;
+}
+
+
+
+.lista_convidados_conteudo fieldset label textarea{
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    width: 500px;
+    height: 120px;
+    font-size: 12px;
+    color: #666;    
+    border-radius: 3px;
+    padding: 5px;
+}

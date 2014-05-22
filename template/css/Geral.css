@@ -1,0 +1,1159 @@
+/* Fontes */
+
+@font-face {
+    font-family: 'source_sans_prosemibold';
+    src: url('../fontes/sourcesanspro-semibold-webfont.eot');
+    src: url('../fontes/sourcesanspro-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fontes/sourcesanspro-semibold-webfont.woff') format('woff'),
+         url('../fontes/sourcesanspro-semibold-webfont.ttf') format('truetype'),
+         url('../fontes/sourcesanspro-semibold-webfont.svg#source_sans_prosemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'source_sans_proregular';
+    src: url('../fontes/sourcesanspro-regular-webfont.eot');
+    src: url('../fontes/sourcesanspro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fontes/sourcesanspro-regular-webfont.woff') format('woff'),
+         url('../fontes/sourcesanspro-regular-webfont.ttf') format('truetype'),
+         url('../fontes/sourcesanspro-regular-webfont.svg#source_sans_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'source_sans_proregular','Arial';
+    font-size: 12px;
+    min-width: 990px;
+    text-align: left;
+}
+
+ul{
+    list-style: none;
+}    
+
+a img {
+    border: 0 none;
+}
+a {
+    text-decoration: none;
+}
+input, select {
+    outline: 0 none;
+}
+
+.respiro {
+    padding: 10px;
+}
+
+.bt_direita{
+    text-align: right;
+}
+
+.banner {
+    text-align: center;
+}
+
+.banner * {
+    display: block;
+    margin: 0 auto;
+}
+
+.divisa_topo{
+    margin: 5px 0;
+    border-top: 7px solid #0f3b69;
+    border-bottom: 0;
+}
+
+#containerconteudo {
+    clear: both;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: left;
+}
+#containerconteudo-fixo{
+    width: 990px;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+}
+
+#coluna_esquerda {
+	float: left;
+	padding-bottom: 10px;
+	width: 240px;
+}
+
+#conteudo{
+    height: auto;
+    margin: 0 auto 10px;
+    overflow: hidden;
+    width: auto;
+}
+
+.conteudo_fixo{
+    width: 990px;
+    margin: 0 auto;
+    overflow: hidden;
+    height: auto;
+    position: relative;
+    z-index: 7777;
+}
+
+.float{
+    float: left;
+    width: 715px;
+    margin-left: 35px;
+}
+
+.respiro_conteudo {
+    padding: 5px 10px;
+}
+.conteudo_full {
+    clear: both;
+    height: auto;
+    margin: 10px 0 0;
+    overflow: hidden;
+    width: auto;
+}
+.respiro_conteudo_full {
+    padding: 10px 5px 0;
+}
+.box {
+    clear: both;
+}
+
+.tit_box{
+    padding: 0 0 15px 0;
+    position: relative;
+}
+
+.tit_box h2 span{
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #0F3B69;
+    font-family: 'source_sans_prosemibold';
+    font-size: 20px;
+    font-weight: normal;
+    padding: 0 15px 0 5px;
+    position: absolute;
+    text-transform: uppercase;
+    top: -4px;
+    width: auto;
+}
+
+.tit_box h2{
+}
+
+.tit_box .ver_mais{
+    color: #0F3B69;
+    font-family: 'source_sans_proregular';
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    top: -7px;
+}
+
+.tit-box-checkout {
+    margin: 5px 0 18px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    height: 12px;
+}
+
+.tit-box-checkout h2 {
+    display: inline-block;
+    font-size: 16px;
+    padding: 3px 10px;
+    text-transform: uppercase;
+    *display: inline;
+    background: #fff;
+}
+
+.tit_box a.ver_todos {
+    color: #FFFFFF;
+    display: block;
+    float: right;
+    font-size: 11px;
+    font-weight: normal;
+    margin: 0 10px;
+}
+
+.tit_box_full {
+    margin: 5px 0 18px;
+    text-align: center;
+}
+.tit_box_full h2 {
+    display: inline-block;
+    font-size: 16px;
+    padding: 3px 10px;
+    font-family: 'source_sans_prosemibold';
+    font-weight: normal;
+}
+.listagem {
+    float: right;
+    margin: 5px 0 0;
+}
+.listagem .exibe_lista {
+    background: url("../imagens/exibe_lista.png") no-repeat scroll left center transparent;
+    color: #062A59;
+    font-size: 11px;
+    margin-right: 10px;
+    padding: 0 0 0 20px;
+}
+.listagem .exibe_tabela {
+    background: url("../imagens/exibe_tabela.png") no-repeat scroll left center transparent;
+    color: #062A59;
+    font-size: 11px;
+    padding: 0 0 0 20px;
+}
+.comparacao {
+    font-size: 12px;
+    margin: 15px 0;
+    text-align: right;
+}
+.comparacao img {
+    cursor: pointer;
+    margin: 0 5px;
+    vertical-align: middle;
+}
+.ordenar {
+    border-top: 1px solid #555555;
+    margin: 13px 0;
+}
+.ordenar .ordenar_esquerda {
+    float: left;
+    margin-top: -10px;
+    background: #fff;
+}
+.ordenar .ordenar_direita {
+    background: #fff;
+    float: right;
+    margin-top: -11px;
+    padding-left: 10px;
+}
+.ordenar .ordenar_direita select {
+    border: 1px solid #CCCCCC;
+    font-size: 11px;
+    margin-left: 5px;
+    padding: 2px;
+}
+.vitrine_geral ul {
+    list-style: none outside none;
+    margin-top: 10px;
+    overflow: hidden;
+    text-align: left;
+}
+.vitrine_geral ul li {
+    float: left;
+    height: 320px;
+    margin: -1px 0 35px;
+    padding: 10px 0 0;
+    text-align: left;
+    vertical-align: top;
+    width: 230px;
+    border-top: 1px solid #eee;
+}
+.vitrine_geral ul.lista li {
+    float: left;
+    height: auto;
+    padding: 20px 0 10px;
+    text-align: left;
+    width: 100% !important;
+}
+.vitrine_geral ul li.first {
+    clear: left;
+}
+.vitrine_geral ul li .produto {
+    margin: 0 auto;
+    padding-top: 4px;
+    position: relative;
+    width: 200px;
+    text-align: left;
+}
+.vitrine_geral ul.lista li .produto {
+    height: auto;
+    margin: 0;
+    padding-top: 4px;
+    position: relative;
+    width: 100%;
+}
+
+.titulo {
+    font-size: 13px;
+    font-weight: normal;
+    height: 30px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    clear: both;
+    display: block;
+}
+.vitrine_geral ul.lista li .titulo {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 10px 230px 0 0;
+    max-height: 67px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.vitrine_geral ul li .descricao {
+    color: #3A3A3A;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 16px;
+    margin-bottom: 5px;
+    max-height: 83px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.vitrine_geral ul li .descricao a {
+    color: #3A3A3A;
+}
+.vitrine_geral ul li .descricao a:hover {
+    color: #9C0004;
+}
+.vitrine_geral ul.lista li .descricao {
+    color: #666666;
+    display: block;
+    font-size: 11px;
+    margin: 10px 230px 0 0;
+}
+.vitrine_geral ul.lista li .preco_conteudo {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    width: 170px;
+}
+
+.preco_parcelado{
+    height: 19px;
+}
+
+.preco{
+    height: 28px;
+}
+
+.preco_antigo {
+    height: 16px;
+}
+
+.preco_de {
+    font-size: 14px;
+    text-decoration: line-through;
+}
+
+.preco_antigo_preco {
+    font-size: 14px;
+    text-decoration: line-through;
+}
+.preco_preco {
+    color: #0f3b69;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'source_sans_prosemibold';
+}
+
+.preco_por{
+    font-size: 18px;
+    font-weight: normal;
+    font-family: 'source_sans_prosemibold';
+}
+
+.preco_ou {
+    color: #5f5a5a;
+    font-size: 13px;
+    font-weight: normal;
+}
+.preco_parcelado_vezes{
+    color: #101763;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+}
+.preco_parcelado_preco{
+    color: #101763;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.vitrine_geral ul li .foto {
+    height: 200px;
+    margin-bottom: 5px;
+    position: relative;
+    text-align: center;
+}
+
+.vitrine_geral ul.lista li .foto {
+    float: left;
+    margin-bottom: 0;
+    position: relative;
+    text-align: center;
+    width: 170px;
+}
+.vitrine_geral ul li .comparar {
+    color: #062A59;
+    font-size: 11px;
+    margin: 10px 0;
+    text-align: center;
+}
+.vitrine_geral ul li .comparar input {
+    margin-right: 5px;
+    vertical-align: top;
+}
+.vitrine_geral ul li .comparar label span {
+    vertical-align: middle;
+}
+
+.vitrine_geral ul li .promocao-express {
+
+}
+
+.tag-oferta {
+    height: 16px;
+}
+
+.box-tag{
+    padding: 5px;
+    text-align: center;
+}
+
+.frete-gratis {
+    height: 15px;
+    width: 95px;
+    display: block;
+    float: left;
+}
+.tag-indisponivel {
+    left: 25px;
+    position: absolute;
+    top: 70px;
+    width: 127px;
+}
+
+.vitrine_geral ul li .maisdetalhe {
+    margin-top: 10px;
+}
+.dept_vazio {
+    color: #000000;
+    font-size: 12px;
+    margin: 10px 0;
+    text-align: center;
+}
+.produtos_quantidade {
+    color: #0d2854;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+.paginacao {
+    float: left;
+    margin: 0 5px;
+    text-align: center;
+}
+.paginacao a {
+    border-radius: 10px 10px 10px 10px;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 5px;
+    padding: 0 5px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.paginacao a.paginas {
+}
+.paginacao a:hover {
+    background: none repeat scroll 0 0 #0f3b69;
+    color: #FFFFFF;
+}
+.paginacao a.selecionado {
+    background: none repeat scroll 0 0 #0f3b69;
+    color: #FFFFFF;
+}
+.paginacao a.prox_ant {
+    color: #0F3B69;
+    font-size: 15px;
+}
+.paginacao a.prox_ant:hover {
+    background: none;
+}
+.paginacao a.prox_ant img {
+    vertical-align: middle;
+}
+#erro {
+    margin: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+.lista_erro {
+    background-image: url("../imagens/erro.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding: 10px 5px 10px 65px;
+    text-align: left;
+    width: 680px;
+}
+.lista_erro h2 {
+    font-size: 14px;
+    margin: 7px 0;
+}
+.lista_erro ul {
+    list-style: none outside none;
+}
+.lista_erro ul li {
+    background-image: url("../imagens/seta_erro.gif");
+    background-position: left 4px;
+    background-repeat: no-repeat;
+    font-size: 12px;
+    line-height: 20px;
+    padding-left: 12px;
+}
+.lista_erro a {
+    text-decoration: underline;
+}
+#sucesso {
+    margin: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+.lista_sucesso {
+    background-image: url("../imagens/sucesso.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding: 10px 5px 10px 65px;
+    text-align: left;
+    width: 680px;
+}
+.lista_sucesso h2 {
+    color: #444444;
+    font-size: 14px;
+    margin: 7px 0;
+}
+.migalha {
+    clear: both;
+    height: auto;
+    overflow: hidden;
+    padding: 10px 0 10px 0px;
+}
+.migalha .estaem {
+    float: left;
+    font-size: 12px;
+    margin-right: 10px;
+}
+.migalha .migalha_first {
+    font-size: 12px;
+    margin-right: 3px;
+    text-decoration: none;
+}
+
+.migalha .migalha_last {
+    font-size: 12px;
+    margin-left: 3px;
+}
+
+.tab_comparar {
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+}
+.tabela_comparar {
+    clear: both;
+    font-size: 12px;
+    margin: 20px 0;
+    width: 100%;
+}
+.tabela_comparar th {
+    background: none repeat scroll 0 0 #E6E6E6;
+    border-bottom: 1px dashed #FFFFFF;
+    color: #062A59;
+    font-weight: bold;
+    padding: 6px 10px;
+    text-align: right;
+}
+.tabela_comparar td {
+    background: none repeat scroll 0 0 #F1F1F1;
+    border-bottom: 1px dashed #FFFFFF;
+    color: #062A59;
+    font-weight: normal;
+    padding: 5px;
+    text-align: center;
+}
+.tabela_comparar td.nome {
+    color: #062A59;
+    font-weight: bold;
+}
+.tabela_comparar td a {
+    color: #062A59;
+    font-weight: normal;
+    padding: 5px;
+    text-decoration: none;
+}
+.tabela_comparar .no_bg {
+    background: none repeat scroll 0 0 transparent !important;
+}
+#btClose {
+    float: right;
+}
+
+.formulario {
+    list-style: none outside none;
+    overflow: hidden;
+}
+.info {
+    font-size: 11px;
+    margin: 5px;
+    text-align: right;
+}
+.formulario .list {
+    overflow: hidden;
+    padding: 5px 0;
+    vertical-align: top;
+}
+.formulario label {
+    font-size: 15px;
+}
+.formulario .list.obrigatorio .tit_label {
+    font-family: 'source_sans_prosemibold';
+}
+.formulario .list .tit_label {
+    clear: left;
+    float: left;
+    margin-right: 5px;
+    padding: 4px 0;
+    text-align: right;
+    width: 220px;
+    font-size: 15px;
+}
+.formulario .list input {
+    border: 1px solid #CCCCCC;
+    font-size: 11px;
+    margin: 0 3px;
+    padding: 4px;
+    vertical-align: middle;
+    width: 250px;
+}
+.formulario .list .larg_100 input {
+    width: 350px;
+}
+.formulario .list .larg_75 input {
+    width: 200px;
+}
+.formulario .list .larg_50 input {
+    width: 100px;
+}
+.formulario .list .larg_25 input {
+    width: 30px;
+}
+.formulario .list .checkbox input {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none transparent;
+    height: auto;
+    margin: 5px 3px;
+    padding: 0;
+    width: auto;
+}
+.formulario .list.radio label {
+    margin-right: 15px;
+    vertical-align: middle;
+}
+.formulario .list.radio input {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none transparent;
+    height: auto;
+    margin: 0 3px;
+    padding: 0;
+    width: auto;
+}
+.formulario .list .confirm input {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none transparent;
+    height: 20px;
+    margin: 0 3px;
+    padding: 0;
+    width: auto;
+}
+.formulario .list select {
+    border: 1px solid #CCCCCC;
+    color: #666666;
+    font-size: 11px;
+    margin: 0 3px;
+    padding: 3px;
+    vertical-align: middle;
+    width: 200px;
+}
+.formulario .list textarea {
+    border: 1px solid #CCCCCC;
+    color: #666666;
+    font-family: tahoma;
+    font-size: 11px;
+    height: 100px;
+    margin: 0 3px;
+    padding: 4px;
+    vertical-align: middle;
+    width: 300px;
+}
+.formulario .list.cep {
+    background: none repeat scroll 0 0 #F1F1F1;
+    margin: 10px 0;
+    padding: 15px 0;
+}
+.formulario .list.cep a {
+}
+.formulario .list .erro {
+    vertical-align: middle;
+}
+.formulario .list small {
+    font-size: 11px;
+}
+.formulario .list small.contador input {
+    border: medium none transparent;
+    margin: 0;
+    padding: 0;
+    width: 25px;
+}
+.formulario a {
+    font-size: 13px;
+}
+.en {
+    display: none;
+}
+.info_pedido {
+    margin: 20px 0;
+    text-align: center;
+    width: auto;
+}
+.info_pedido .info_pedido_conteudo{
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 5px;
+    width: 95%;
+}
+.info_pedido .info_pedido_conteudo .numero_pedido{
+    float: left;
+    height: 145px;
+    width: 237px;
+}
+.info_pedido .info_pedido_conteudo .numero_pedido h3{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 10px;
+}
+.info_pedido .info_pedido_conteudo .numero_pedido p{
+    color: #4C4C4C;
+    font-size: 13px;
+    margin: 0;
+    padding: 0 5px;
+    text-align: center;
+}
+.info_pedido .info_pedido_conteudo .numero_pedido p strong{
+    color: #0F3B69;
+    font-size: 14px;
+    font-weight: normal;  
+}
+
+.info_pedido .info_pedido_conteudo .numero_pedido p.numero {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+.mensagem_compra_direta {
+    padding: 25px 10px 0;
+    text-align: center;
+}
+.mensagem_compra_direta p {
+    color: #8B5B67;
+    font-family: "Trebuchet MS",Arial,Helvetica;
+    font-size: 12px;
+    font-weight: bold;
+}
+.mensagem_compra_direta .bt_compra_direta {
+    margin: 15px 0;
+    text-align: center;
+}
+.mensagem_compra_direta .bt_compra_direta img {
+    margin: 0 5px;
+}
+
+
+#filtros_busca{
+
+}
+
+.tit-filtro{
+    font-size: 18px;
+    font-family: 'source_sans_prosemibold';   
+}
+
+.filtros_busca_conteudo{
+    overflow: hidden;
+}
+
+
+.filtros-tipo {
+    margin-bottom: 5px;
+    padding: 10px 0;
+}
+
+.filtros-tipo-tit{
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.filtros-tipo-list{
+    text-align: left;
+    list-style: disc inside none;
+}
+
+.filtros-tipo-item{
+    padding: 3px 5px 3px 26px;
+}
+
+.filtros-tipo-link{
+    font-size: 14px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.filtros_utilizados{
+    overflow: hidden;
+}
+
+.filtros_utilizados h2{
+    color: #000;
+    font-size: 13px;
+}
+
+.filtros_utilizados ul{
+    list-style: none;
+}
+
+
+.filtros_utilizados ul li{
+    border: 1px solid #ccc;
+    margin: 5px;
+    float: left;
+    padding: 3px;
+    font-size: 12px;
+}
+
+.filtros_utilizados ul li img{
+    margin-left: 3px;
+}
+
+.filtros_busca_conteudo fieldset{
+    border: none;
+}
+
+.filtros_busca_conteudo label {
+    display: block;
+    margin: 9px 0 9px 15px;
+    text-align: center;
+}
+
+.left-filter {
+    float: left;
+}
+
+.filtros_busca_conteudo label.botao_filtrar {
+    margin: 38px 4px 0 1px;
+}
+
+.filtros_busca_conteudo label.botao_filtrar a{
+    padding: 5px 10px;
+}
+
+.filtros_busca_conteudo select{
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 115px;
+}
+
+/*Erro 404 e 500*/
+
+.erro_404{
+    text-align: center;
+    padding: 50px 0;
+}
+
+.erro_404_conteudo{
+    text-align: left;
+    width: 790px;
+    margin: 0 auto;
+}
+
+.erro_404_conteudo h2{
+    color: #032366;
+    font-size: 30px;
+    padding: 9px 0 14px 120px;
+    font-weight: normal;
+    background: url('../imagens/icone_atencao.png') no-repeat left center;
+}
+
+.erro_404_conteudo .erro_404_geral{
+    padding-left: 120px;
+}
+
+.erro_404_conteudo h3{
+    color: #303030;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+.erro_404_conteudo ul{
+    margin: 10px 0 30px 0;
+    list-style: none;
+}
+
+.erro_404_conteudo ul li{
+    color: #6e6e6e;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.erro_404_conteudo h4{
+    color: #0d2854;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.erro_404_conteudo fieldset{
+    border: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.erro_404_conteudo fieldset label{
+    display: block;
+    padding: 4px 5px;
+    background: url('../imagens/bg_busca_erro.png') no-repeat left top;
+}
+
+.erro_404_conteudo fieldset label input{
+    padding: 10px 5px;
+    font-size: 16px;
+    color: #999; 
+    border: none transparent;
+    width: 415px;
+    vertical-align: middle;
+}
+
+.erro_404_conteudo fieldset label img{
+    vertical-align: middle;
+}
+
+.erro_404_conteudo a{
+    color: #6E6E6E;
+    text-decoration: underline;
+    font-weight: normal;
+    font-size: 11px;
+}
+
+/* Lista de Presente */
+
+#menu{
+    display: none!important;
+}
+
+.tit_lista_presente{
+	background: url('../imagens/tit_lista_presente.png') no-repeat left center transparent;
+	overflow: hidden;	
+	padding: 20px 0 15px;
+}
+
+.tit_lista_presente h2{
+	margin: 0 0 10px 80px;
+	border-bottom: 3px solid #062a59;
+	color: #062a59;
+	font-size: 18px;
+}
+
+.container_descricao_lista{
+	overflow: hidden;
+	margin: 0;
+        text-align: center;
+}
+
+.box_info_descricao{
+    background: url('../imagens/textura_presentes_dois.png') repeat left top scroll transparent;
+    padding: 0 5px;
+    border-bottom: 2px solid #f7f3e6;
+    margin-bottom: 20px;
+}
+
+.container_descricao_lista_conteudo{
+	overflow: hidden;
+	margin: 0 auto;
+        width: 970px;
+        text-align: left;
+        padding: 10px 0;
+}
+
+.container_descricao_lista .foto_lista{
+	float: left;
+	margin: 5px 10px 5px 5px;
+	width: 154px;
+        font-size: 0;
+        border: 2px solid #d9bea8;
+}
+
+.container_descricao_lista.fechado .foto_lista{
+	display: none;
+}
+
+.container_descricao_lista .descricao_lista{
+	float: left;
+	margin: 0 5px 5px;
+	width: 760px;
+        font-family: "trebuchet ms";
+}
+
+.container_descricao_lista .descricao_lista h3{
+	color: #6e543f;
+        font-size: 20px;
+        padding: 10px 0 5px 45px;
+        background: url("../imagens/bullet_presente_lista.png") no-repeat left center;
+        font-family:"Arial Rounded MT Bold", Helvetica, sans-serif;
+}
+
+.container_descricao_lista .descricao_lista h3 small{
+	color: #765d48;
+        font-size: 12px;
+        cursor: pointer;
+        margin-left: 5px;
+        vertical-align: middle;
+        font-weight: normal;
+}
+
+.container_descricao_lista .descricao_lista p{
+	color: #765d48;
+        font-size: 13px;
+        padding-left: 25px;
+        margin-top: 5px;
+        display: none;
+}
+
+.container_descricao_lista.fechado .descricao_lista p{
+        display: block;
+}
+
+.container_descricao_lista .descricao_lista span{
+	display: block;
+        font-size: 12px;
+        color: #765d48;
+        line-height: 18px;
+        margin-top: 10px;
+}
+
+.container_descricao_lista.fechado .descricao_lista span{
+	display: none;
+}
+
+.container_descricao_lista .descricao_lista span strong{
+	color: #6e543f;
+        font-weight: bold;
+}
+
+.container_descricao_lista .descricao_lista span strong a{
+	color: #062a59;
+	font-size: 12px;
+}
+
+.container_descricao_lista .descricao_lista span strong a:hover{
+	text-decoration: underline;
+}
+
+.acoes_lista{
+	clear: both;
+        background: #f3ecd8;
+        border-left: none;
+        border-right: none;
+        text-align: center;
+        padding: 10px 0 8px;
+        width: 990px;
+        margin: 0 auto;
+}
+
+.acoes_lista_conteudo{
+	width: 940px;
+        text-align: left;
+        margin: 0 auto;
+}
+
+.acoes_lista a{
+	margin: 0 5px;
+}
+
+.lista_mapa img{
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.bg-box-topo-presentes{
+    background: url('../imagens/bg_lista_presente.jpg') repeat left top scroll transparent;
+    border-bottom: 2px dashed #e07186;        
+}
+
+.container-box-topo-presentes{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.tit-box-presentes{
+	background: url('../imagens/textura_presentes_dois.png') repeat left top scroll transparent;
+	padding: 5px;
+}
+
+.container-tit-presentes{
+	width: 960px;
+	margin: 0 auto;
+}
+
+.tit-box-presentes h2{
+	color: #6e543f;
+	font-size: 21px;
+	padding: 15px 0 15px 50px;
+	background: url('../imagens/tit_lista_presente.png') no-repeat left center scroll transparent;
+}
+
+.tit-box-presentes h2 small{
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.titulo-presente{
+    vertical-align: middle;
+}
+
+/* Checkout topo */
+
+.passo-entrega,
+.passo-pagamento,
+.passo-confirmacao{
+    padding: 30px 187px;
+    text-indent: -9999px;
+    display: block;
+    color: transparent;
+}
+
+.box-bt{
+    padding: 8px 10px;
+    display: inline-block;
+    margin: 0 3px;
+    font-size: 14px;
+}

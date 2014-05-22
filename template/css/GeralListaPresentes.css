@@ -1,0 +1,127 @@
+#menu{
+    display: none!important;
+}
+
+.tit_lista_presente{
+	background: url('../imagens/tit_lista_presente.png') no-repeat left center transparent;
+	overflow: hidden;	
+	padding: 20px 0 15px;
+	margin: 10px 0 0;
+}
+
+.tit_lista_presente h2{
+	margin: 0 0 10px 80px;
+	border-bottom: 3px solid #062a59;
+	color: #062a59;
+	font-size: 18px;
+}
+
+.container_descricao_lista{
+	overflow: hidden;
+	margin: 0;
+        text-align: center;
+}
+
+.container_descricao_lista_conteudo{
+	overflow: hidden;
+	margin: 0 auto;
+        width: 970px;
+        text-align: left;
+        padding: 10px 0;
+}
+
+.container_descricao_lista .foto_lista{
+	float: left;
+	margin: 5px 10px 5px 5px;
+	width: 160px;
+        min-height: 120px;
+        background: url("../imagens/lista_presente_sem_foto.png") no-repeat center center;
+}
+
+.container_descricao_lista.fechado .foto_lista{
+	display: none;
+}
+
+.container_descricao_lista .descricao_lista{
+	float: left;
+	margin: 5px;
+	width: 760px;
+        font-family: "trebuchet ms";
+}
+
+.container_descricao_lista .descricao_lista h3{
+	color: #062A59;
+        font-size: 20px;
+        padding-left: 25px;
+        background: url("../imagens/lista_presentes_ico.png") no-repeat left center;
+}
+
+.container_descricao_lista .descricao_lista h3 small{
+	color: #999;
+        font-size: 11px;
+        cursor: pointer;
+        margin-left: 5px;
+        vertical-align: middle;
+}
+
+.container_descricao_lista .descricao_lista p{
+	color: #999;
+        font-size: 13px;
+        padding-left: 25px;
+        margin-top: 5px;
+        display: none;
+}
+
+.container_descricao_lista.fechado .descricao_lista p{
+        display: block;
+}
+
+.container_descricao_lista .descricao_lista span{
+	display: block;
+        font-size: 12px;
+        color: #666;
+        line-height: 18px;
+        margin-top: 10px;
+}
+
+.container_descricao_lista.fechado .descricao_lista span{
+	display: none;
+}
+
+.container_descricao_lista .descricao_lista span strong{
+	color: #333;
+}
+
+.container_descricao_lista .descricao_lista span strong a{
+	color: #062a59;
+	font-size: 12px;
+}
+
+.container_descricao_lista .descricao_lista span strong a:hover{
+	text-decoration: underline;
+}
+
+.acoes_lista{
+	clear: both;
+        background: #eee;
+        border: 1px dotted #999;
+        border-left: none;
+        border-right: none;
+        text-align: center;
+        padding: 10px 0;
+}
+
+.acoes_lista_conteudo{
+	width: 970px;
+        text-align: left;
+        margin: 0 auto;
+}
+
+.acoes_lista a{
+	margin: 0 5px;
+}
+
+.lista_mapa img{
+    max-width: 500px;
+    max-height: 500px;
+}

@@ -1,0 +1,258 @@
+.lista_produtos{
+  margin: 20px 0 0 0;
+  font-family: "trebuchet ms";
+}
+
+.encontrar{
+  overflow: hidden;
+  background: #f3ecd8;
+  padding: 0;
+}
+
+.encontrar_esquerda{
+  float: left;
+  background: #e7dfc7;
+}
+
+.encontrar_direita{
+  float: right;
+  margin-right: 10px;
+}
+
+.encontrar_esquerda fieldset{
+  border: 0 none;
+  padding: 3px 7px;
+}
+
+.encontrar_esquerda fieldset *{
+  float: left;
+  vertical-align: middle;
+}
+
+.encontrar_esquerda fieldset span{
+  font-size: 13px;
+  color: #765d48;
+  font-weight: normal;
+  padding-top: 5px;
+  margin-right: 5px;
+  font-family: "trebuchet ms";
+  margin-left: 10px;
+}
+
+.encontrar_esquerda fieldset input{
+  border: 1px solid #ccc;
+  padding: 3px;
+  font-size: 11px;
+  color: #666;
+  width: 180px;
+  margin-right: 10px;
+  margin-top: 2px;
+}
+
+.encontrar_esquerda fieldset a{
+  display: block;
+}
+
+.encontrar_direita fieldset{
+  border: 0 none;
+  background: #6e543f;
+  margin: 6px 0 0;
+  padding: 2px 3px 2px 8px;
+}
+
+.encontrar_direita fieldset label{
+  color: #fff;
+  font-size: 12px;
+}
+
+.encontrar_direita fieldset label select{
+  color: #062a59;
+  border: 1px solid #062a59;
+  background: #fff;
+  width: 90px;
+  font-size: 11px;
+}
+
+.tab_carrinho th{
+  text-align: center;
+  color: #666666;
+  font-weight: normal;
+  padding: 0 5px;
+  white-space: nowrap;
+}
+
+.tab_carrinho .item_carrinho td{
+  border-bottom: 1px dotted #ccc;
+  padding: 10px 5px;
+}
+
+.tab_carrinho td{
+  text-align: center;
+}
+
+.tab_carrinho{
+  margin-top: 15px;
+}
+
+.tab_carrinho tr{
+  color: #575757
+}
+
+.tab_carrinho a{
+  color: #323232;
+  text-decoration: none;
+}
+
+.tab_carrinho a:hover{
+  text-decoration: underline;
+}
+
+
+.tab_carrinho td.qtd input{
+  width: 30px;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin-right: 5px;
+  font-size: 11px;
+  padding: 2px;
+}
+
+.tab_carrinho td.qtd *{
+  vertical-align: middle;
+}
+
+.tab_carrinho td.qtd img{
+  cursor: pointer;
+}
+
+.tab_carrinho thead th {
+  line-height: 33px;
+  color: #6e543f;
+  font-weight: bold;
+  background: #f3ecd8;
+  font-size: 12px;
+  font-family: 'Tahoma';
+}
+
+
+.tab_transportadoras{
+  border: 1px solid #E8E8E8;
+  border-top: none;
+  margin: 0 auto;
+  border-bottom: none;
+  color: #575757;
+}
+
+.tab_transportadoras .alternada1 td{
+  border-bottom: 1px solid #E8E8E8;
+  height:32px;
+  background-color: #F9F9F9;
+}
+
+.tab_transportadoras .alternada2 td{
+  border-bottom: 1px solid #E8E8E8;
+  height:32px;
+  background-color: #fff;
+}
+
+.tab_transportadoras .selecionada td{
+  border-bottom: 1px solid #E8E8E8;
+  height:32px;
+  background-color: #E6F5FF;
+}
+
+
+.tab_carrinho tbody tr.subtotal{
+  height: 50px;
+}
+
+.lista_navegacao{
+  margin: 10px 0;
+}
+
+.lista_navegacao a{
+  margin: 0 5px;
+}
+
+a.ver_compradores{
+  display: block;
+  font-size: 11px;
+  color: #062A59;
+  text-decoration: underline;
+}
+
+.paginacao_lista{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.paginacao_lista a{
+  text-decoration: none;
+  font-weight: bold;
+  color: #052547;
+  font-size: 12px;
+  padding: 0 5px;
+}
+
+.paginacao_lista a:hover{
+  text-decoration: underline;
+}
+
+.paginacao_lista a.selecionado{
+  border: 1px solid #052547;
+  color: #052547;
+  padding: 2px 5px;
+}
+
+/* Ver Compradores */
+
+.compradores-oculta{
+  display: none;
+}  
+
+.compradores{
+  width:  450px;
+  margin: 0 auto;
+  padding: 4px;
+  font-family: trebuchet ms;
+}  
+
+.compradores .tit_compradores{
+  overflow: hidden;
+  padding:5px 0 0;
+  border-bottom: 2px solid #ccc;
+}
+
+.tit_compradores h2{
+  font-size: 18px;
+  color: #062A59;
+  text-align: left;
+  padding: 0 35px 5px 0;
+}
+
+.info_compradores{
+  overflow: hidden;
+  padding: 10px 0;
+  border-bottom: 1px dotted #999;
+}
+
+.info_compradores span{
+  font-size: 12px;
+  color: #666;
+  display: block;
+  margin: 5px 0;
+  text-align: left;
+}
+
+.info_compradores span strong{
+  color: #333;
+}
+
+.msg_comprador{
+  width: 370px;
+  max-height: 150px;
+  float: right;
+  overflow: auto;
+  background: #fff;
+  padding: 0 5px;
+}

@@ -1,0 +1,384 @@
+/*
+Tema: Spok
+URL do tema: http://apps.ciashop.com.br/produto/...
+Autor: Ciashop Ecommerce Evolution
+Descrição: Tema Customizado via Gerenciador de Template)
+Versão: 1.0
+*/
+
+
+
+/* Geral */
+
+body{ 
+	background-color: @ThemeSettings.bg_body;
+	background-image: @ThemeSettings.bg_img_body;
+	color: @ThemeSettings.texto_padrao;
+}
+
+a{
+	color: @ThemeSettings.link_padrao;
+}
+
+.borda-produto{
+	border-width: 1px;
+	border-style: solid;
+	border-color: @ThemeSettings.borda_padrao;
+}
+
+.tag-lancamento{
+	background: @ThemeSettings.bg_tag_lancamento;
+	color: @ThemeSettings.texto_tag_lancamento;
+}
+
+.tag-frete{
+	background: @ThemeSettings.bg_tag_frete;
+	color: @ThemeSettings.texto_tag_frete;	
+}
+
+.tag-indisponivel{
+	background: @ThemeSettings.bg_tag_indisponivel;
+	color: @ThemeSettings.texto_tag_indisponivel;	
+}
+
+.carrinho-vazio{
+	background: url('../imagens/@ThemeSettings.img_carrinho_vazio') no-repeat right bottom scroll transparent;
+}
+
+.bg-numero-pedido{
+	background: url("../imagens/@ThemeSettings.bg_numero_pedido") no-repeat 0 0 scroll transparent;
+}
+
+.numero-pedido{
+	color: @ThemeSettings.texto_numero_pedido;
+}
+
+/* Header */
+
+.bg-topo{
+	background: @ThemeSettings.bg_topo;
+}
+
+.logo{
+	background: url('../imagens/@ThemeSettings.logo_loja') no-repeat 0 0 scroll transparent;
+}
+
+.link-topo a, .link-topo{
+	color: @ThemeSettings.link_topo;
+}
+
+.bg-topo input{
+	background: @ThemeSettings.input_busca_topo;
+	border-color: @ThemeSettings.bg_busca_topo;
+        border-width: 1px;
+        border-style: solid;
+}
+
+.bt_buscar_topo{
+	background: url("../imagens/@ThemeSettings.img_pesquisar_topo") no-repeat scroll 0 0 transparent;	
+}
+
+.img-mini-carrinho{
+	background: url('../imagens/@ThemeSettings.img_mini_carrinho') no-repeat center center scroll transparent;
+}
+
+/* Footer */
+
+.rodape{
+	background: @ThemeSettings.bg_rodape;
+}
+
+.newsletter{
+	background: @ThemeSettings.bg_newsletter;
+	border-top-width: 5px;
+	border-top:style: solid;
+	border-top-color: @ThemeSettings.borda_newsletter;
+}
+
+.texto-newsletter{
+	color: @ThemeSettings.texto_newsletter;
+}
+
+.img-newsletter{
+	background: url("../imagens/@ThemeSettings.img_newsletter") no-repeat scroll 0 0 transparent; 
+}
+
+
+.bg-newsletter input{
+	background: @ThemeSettings.input_newsletter;
+	border-color: @ThemeSettings.borda_input_newsletter;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.bt-cadastrar-news{
+	background: url('../imagens/@ThemeSettings.bt_enviar_newsletter') no-repeat center center scroll transparent;
+}
+
+.rodape2{
+	background: @ThemeSettings.bg_rodape_direitos;
+}
+
+.tit-rodape{
+	color: @ThemeSettings.titulos_rodape;
+}
+
+@if(ThemeSettings.exibir_pg_institucional == "false"){
+	<text>
+		.box_institucionais{
+			display: none;
+		}
+	</text>
+}
+
+/* Menu Horizontal */
+
+@if(ThemeSettings.exibir_menu_horizontal == "false"){
+	<text>
+		.menu-horizontal{
+			display: none;
+		}
+	</text>
+}
+
+.menu-horizontal{
+	background: @ThemeSettings.menu_horizontal;
+}
+
+.borda-menu-horizontal{
+	border-width: 2px 0 2px 0;
+	border-style: solid;
+	border-color: @ThemeSettings.borda_menu_horizontal;
+}
+
+.bg-menu-todas-categorias{
+	background: @ThemeSettings.bg_menu_todas_categorias;
+}
+
+.link-menu-todas-categorias{
+	color: @ThemeSettings.link_menu_todas_categorias;
+}
+
+.link-menu-horizontal{
+	color: @ThemeSettings.link_pai_menu_horizontal;
+	border-width: 0 0 0 1px;
+	border-style: solid;
+	border-color: @ThemeSettings.borda_divisa_menu;
+}
+
+.link-filho-menu-horizontal{
+	color: @ThemeSettings.link_filho_menu_horizontal;
+}
+
+.link-menu-topo:hover{
+	background: @ThemeSettings.link_menu_topo_hover;
+}
+
+
+
+/* Menu Vertical */
+
+@if(ThemeSettings.exibir_menu_vertical == "false"){
+	<text>
+		.menu-vertical{
+			display: none;
+		}
+	</text>
+}
+
+.menu-vertical{
+	background: @ThemeSettings.bg_menu_vertical;
+	color: @ThemeSettings.link_menu_vertical_principal;
+}
+
+.link-pai-menu-vertical{
+	color: @ThemeSettings.link_menu_vertical_principal;	
+}
+
+.menu-vertical li:hover{
+	background: @ThemeSettings.hover_link_menu_vertical_principal;
+}
+
+.menu-vertical-secundario{
+	background: @ThemeSettings.bg_menu_vertical_secundario;
+	border-width: 0 0 4px 0;
+	border-style: solid;
+	border-color: @ThemeSettings.borda_bottom_menu_vertical; 
+}
+
+.lista-menu-vertical-secundario{
+	color: @ThemeSettings.link_menu_vertical_secundario;	
+}
+
+.lista-menu-vertical-secundario:hover{
+	color: @ThemeSettings.hover_link_menu_vertical_secundario;
+}
+
+/* Botões */
+
+.bt-primario{
+	background: @ThemeSettings.bg_bt_principal;
+	color: @ThemeSettings.texto_bt_principal;
+}
+
+.bg-bt-primario{
+	background: @ThemeSettings.bg_bt_principal;	
+}
+
+.texto-bt-primario{
+	color: @ThemeSettings.texto_bt_principal;
+}
+
+.bt-secundario{
+	background: @ThemeSettings.bg_bt_secundario;
+	color: @ThemeSettings.texto_bt_secundario;
+}
+
+.bg-bt-secundario{
+	background: @ThemeSettings.bg_bt_secundario;
+}
+
+.texto-bt-secundario, .texto-bt-secundario a{
+	color: @ThemeSettings.texto_bt_secundario;	
+}
+
+.bt-terciario{
+	background: @ThemeSettings.bg_bt_terciario;
+	color: @ThemeSettings.texto_bt_terciario;
+}
+
+.bg-bt-terciario{
+	background: @ThemeSettings.bg_bt_terciario;
+}
+
+.texto-bt-terciario{
+	color: @ThemeSettings.texto_bt_terciario;	
+}
+
+.bt-especial{
+	background: @ThemeSettings.bg_bt_especial;
+	color: @ThemeSettings.texto_bt_especial;
+}
+
+.bg-bt-especial{
+	background: @ThemeSettings.bg_bt_especial;
+}
+
+.texto-bt-especial{
+	color: @ThemeSettings.texto_bt_especial;
+}
+
+/* Títulos */
+
+.tit-principal{
+	background: @ThemeSettings.bg_tit_principal;
+	color: @ThemeSettings.texto_tit_principal;
+}
+
+.texto-tit-principal{
+	color: @ThemeSettings.texto_tit_principal;	
+}
+
+.tit-secundario{
+	background: @ThemeSettings.bg_tit_secundario;
+	color: @ThemeSettings.texto_tit_secundario;
+}
+
+.tit-vitrine{
+	background: @ThemeSettings.bg_tit_vitrine;
+	color: @ThemeSettings.texto_tit_vitrine;
+	padding: 5px 10px;
+	font-weight: normal;
+}
+
+.tit-checkout{
+	color: @ThemeSettings.texto_tit_pg;
+}
+
+.tit-navegacao{
+	background: @ThemeSettings.bg_navegacao;
+	color:  @ThemeSettings.texto_navegacao;
+}
+
+.box-paginacao{
+	color: @ThemeSettings.texto_paginacao;
+}
+
+.texto-paginacao a{
+	color: @ThemeSettings.texto_paginacao;	
+}
+
+.box-paginacao-selecionado{
+	background: @ThemeSettings.bg_paginacao_selecionado;
+	color: @ThemeSettings.texto_paginacao_selecionado;
+}
+
+.tit-compra-express{
+	color: @ThemeSettings.texto_tit_compra_express;
+}
+
+.passo-entrega{
+	background: url('../imagens/@ThemeSettings.passo_entrega') no-repeat 0 0 scroll transparent;
+}
+
+.passo-pagamento{
+	background: url('../imagens/@ThemeSettings.passo_pagamento') no-repeat 0 0 scroll transparent;
+}
+
+/* Vitrines e Produtos */
+
+.nome-produto{
+	color: @ThemeSettings.texto_nome_produto;
+}
+
+.preco-de{
+	color: @ThemeSettings.texto_preco_de;
+}
+
+.preco-por{
+	color: @ThemeSettings.texto_preco_por;
+}
+
+.preco-parcelado{
+	color: @ThemeSettings.texto_preco_parcelado;
+}
+
+.texto-parcelamento{
+	color: @ThemeSettings.texto_preco_parcelado;
+}
+
+.preco-vista{
+	color: @ThemeSettings.texto_preco_vista;
+}
+
+.bg-box-preco-produto{
+	background: @ThemeSettings.bg_preco_produto;
+}
+
+.tit-produto{
+	color: @ThemeSettings.tit_produto;
+}
+
+.img-carrinho{
+	background: url('../imagens/@ThemeSettings.img_comprar') no-repeat scroll 0 0 transparent;
+}
+
+
+
+/* Mensagem de erro/sucesso */
+
+.lista_erro{
+	background: @ThemeSettings.bg_lista_erro;
+	color: @ThemeSettings.texto_lista_erro;
+	border-width: 1px;
+	border-style: solid;
+	border-color: @ThemeSettings.border_lista_erro;
+}
+
+.lista_sucesso{
+	background: @ThemeSettings.bg_lista_sucesso;
+	color: @ThemeSettings.texto_lista_sucesso;
+	border-width: 1px;
+	border-style: solid;
+	border-color: @ThemeSettings.border_lista_sucesso;
+}

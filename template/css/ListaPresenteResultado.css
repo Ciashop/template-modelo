@@ -1,0 +1,122 @@
+/* Tabela */
+
+.tab_lista_presente{
+	clear: both;
+}
+
+#minha_lista_presente{
+        width: 990px;
+        margin: 10px auto;
+}
+
+.tab_lista_presente td{
+    text-align: center;
+}
+
+.tab_lista_presente{
+    width: 100%;
+}
+
+.tab_lista_presente tr{
+    color: #052547;
+}
+
+.tab_lista_presente a{
+    color: #323232;
+    text-decoration: none;
+}
+
+.tab_lista_presente a:hover{
+    text-decoration: underline;
+}
+
+.tab_lista_presente thead tr th{
+    background: #f3ecd8;
+    color: #576640;
+    font-weight: bold;
+    line-height: 33px;
+    text-align: center;
+    padding: 0 5px;
+    white-space: nowrap;
+    font-family: "Tahoma";
+}
+
+.tab_lista_presente tbody tr td{
+	color: #323232;
+	font-size: 12px;
+	padding: 10px;
+	text-align: center;
+	border-bottom: 1px dotted #333;
+	font-family: 'Tahoma';
+}
+
+.tab_lista_presente tbody tr td:first-child, .tab_lista_presente thead tr th:first-child{
+	padding-left: 20px;
+}
+
+.paginacao_lista{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.paginacao_lista a{
+	text-decoration: none;
+	font-weight: bold;
+	color: #052547;
+	font-size: 12px;
+	padding: 0 5px;
+        display: inline-block;
+}
+
+.paginacao_lista a:hover{
+	text-decoration: underline;
+}
+
+.paginacao_lista a.selecionado{
+	border: 1px solid #052547;
+	color: #052547;
+	padding: 2px 5px;
+}
+
+.lista_nova_busca{
+	 background: url('../imagens/tit_encontra_presentes.png') no-repeat 10px 10px scroll #f3ecd8;
+         border-bottom: 2px dashed #c2a48a;
+	 overflow: hidden;
+	 margin: 50px auto 20px;
+	 padding: 65px 0 15px 30px;
+         width: 990px;
+}
+
+.lista_nova_busca fieldset{
+	 border:none;
+	 width: 97%;
+	 margin: 0 auto;
+}
+
+.lista_nova_busca fieldset label{
+	float: left;
+	width: 290px;
+	color: #6e543f;
+	font-size: 13px;
+        font-family:"Arial Rounded MT Bold", Helvetica, sans-serif;        
+        margin-right: 5px;
+}
+
+
+.lista_nova_busca fieldset label input{
+	border: 1px solid #ccc;
+        padding: 6px 5px;
+	width: 95%;
+	color: #666;
+	font-size: 12px;
+	margin-top: 3px;
+}
+
+.lista_nova_busca fieldset label select{
+	border: 1px solid #ccc;
+        padding: 5px;
+	width: 99%;
+	color: #666;
+	font-size: 12px;
+	margin-top: 3px;
+}

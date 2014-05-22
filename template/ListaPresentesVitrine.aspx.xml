@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?><page><controles><ListaPresentesVitrines><ListaPresentesVitrine ID="ListaPresentesVitrine1"><ListaPresentesVitrineHTML><![CDATA[  <div class="lista_produtos">        
+    	[A1]        
+        [A2]
+        [A3]
+    </div>]]></ListaPresentesVitrineHTML><ListaPresentesVitrinePaginacaoHTML><![CDATA[<div class="paginacao_lista">
+  <condicao:paginacao>
+
+    <repeticao:paginas quantidade="5">
+      <a href="[E7]" class="<condicao:pagina_selecionada>selecionado</condicao:pagina_selecionada>">[E8]</a>
+    </repeticao:paginas>
+
+  </condicao:paginacao>
+</div>]]></ListaPresentesVitrinePaginacaoHTML><ListaPresentesVitrinePesquisaHTML><![CDATA[<div class="encontrar">
+  <div class="encontrar_esquerda">
+    <fieldset>
+      <img src="imagens/lupa_lista.png" alt="Encontrar Produto" /><span>Encontrar Produto</span>
+      [B0]
+      <a href="[B2]">
+        <img src="imagens/bt_buscar_lista_presente.png" alt="Buscar" />
+      </a>
+    </fieldset>
+  </div>
+  <div class="encontrar_direita"> 
+    <fieldset>
+      <label>Filtrar:
+        [B1]
+      </label>
+    </fieldset>
+  </div>
+</div>]]></ListaPresentesVitrinePesquisaHTML><ListaPresentesVitrineProdutosHTML><![CDATA[[C14]
+<table width="100%;" cellspacing="0" cellpadding="0" border="0" class="tab_carrinho">
+  <thead>
+    <tr>
+      <th style="width: 70px;"></th>
+      <th style="text-align: left;">Produtos</th>
+      <th>Quantidade Desejada</th>
+      <th>Quantidade Comprada</th>
+      <th style="width: 50px;"></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>    
+    <repeticao:produto>
+      <tr class="item_carrinho">        
+          <td style="width: 70px;"><a href="[C13]" class="modal_info_produto"><img border="0" alt="[C1]" src="[C0]?width=50" /></a></td>
+          <td style="text-align: left;"><a href="[C13]" class="modal_info_produto">[C1]</a></td>          
+          <td class="qtd">[C2]<img src="imagens/reload.png" alt="Atualizar" /></td>
+          <td>
+            <condicao:comprado>
+              <div>[C3]</div><a href="#" class="ver_compradores">Ver compradores</a>
+              <div style="display: none;" class="compradores-oculta">
+                <div class="compradores">
+                  <div class="tit_compradores">
+                    <h2>[C1]</h2>
+                  </div>
+                  <repeticao:comprador>
+                    <div class="info_compradores">
+                      <span><strong>Nome:</strong> [C7]</span>                      
+                      <span><strong>Email:</strong> [C8]</span>
+                      <span><strong>Quantidade comprada:</strong> [C10]</span>
+                      <span><strong>Comprado na:</strong> [C12]</span>
+                      <condicao:mensagem>
+                        <span><strong>Mensagem:</strong> 
+                          <div class="msg_comprador">
+                            [C9]        
+                          </div>
+                        </span>
+                      </condicao:mensagem>
+                    </div>
+                  </repeticao:comprador>
+                </div>
+              </div>  
+              <span>Já Comprado</span>
+            </condicao:comprado>
+            <condicao:nao_comprado>
+              0
+            </condicao:nao_comprado>            
+          </td>
+          <td>
+            <condicao:excluir>
+              <a href="[C4]"><img src="imagens/bt_deletar_homenageado.png" border="0" alt="Deletar produto" /></a>
+            </condicao:excluir>
+          </td>
+          <td>
+            <condicao:botao_comprar>
+              <a href="[C5]"><img src="imagens/bt_comprar_da_lista.png" alt="Comprar lista" /></a>
+            </condicao:botao_comprar>
+            <condicao:indisponivel>
+              <img src="imagens/indisponivel.png" alt="Indisponivel" />
+            </condicao:indisponivel>
+          </td>
+        </tr>
+      </repeticao:produto>  
+  </tbody>
+</table>
+<script>
+  $('.ver_compradores').live('click', function() {
+      var divCompradores = $(this).next(".compradores-oculta").children(".compradores");
+      $.fn.colorbox({inline:true, href:divCompradores});
+      return false;
+  }); 
+</script>
+[C6]]]></ListaPresentesVitrineProdutosHTML><ListaPresentesVitrineSemProdutoEncontradaHTML><![CDATA[<div id="erro">
+<div class="lista_erro">
+  <h2>Nenhum produto encontrado para a palavra e/ou filtro selecionado.</h2>
+</div>
+</div>
+<div style="text-align: center; padding: 10px 0;">
+  	<a href="javascript: window.history.go(-1)"><img src="imagens/bt_voltar.png" alt="Voltar" /></a>
+</div>
+  
+<style>
+.tab_carrinho{
+	display: none;  
+}
+</style>]]></ListaPresentesVitrineSemProdutoEncontradaHTML><ListaPresentesVitrineSemProdutoHTML><![CDATA[<div id="erro">
+<div class="lista_erro">
+  <h2>Nenhum produto adicionado a lista</h2>
+  <p>Clique no botão "Adicionar Produtos" para inserir produtos a sua lista!</p>
+</div>
+</div>
+
+<style>
+.tab_carrinho{
+	display: none;  
+}
+  
+.encontrar{
+	display: none;  
+}
+</style>]]></ListaPresentesVitrineSemProdutoHTML><MensagemProdutosRemovidosSemPrecoListaHTML><![CDATA[<div id="erro">
+<div class="lista_erro">
+  <h2>Alerta</h2><p>- Os seguintes produtos foram retirados da lista, devido a nova tabela de preços:</p>
+  <ul>
+    [E0]
+  </ul>
+</div>
+</div>]]></MensagemProdutosRemovidosSemPrecoListaHTML><QuantidadeItensPorPagina value="5" /><VisaoDoConvidado value="False" /></ListaPresentesVitrine></ListaPresentesVitrines><SEOs><SEO ID="seo" /></SEOs><Banners><Banner ID="Fullzao_Topo" /></Banners><ListaPresentesInformacoess><ListaPresentesInformacoes ID="ListaPresentesInformacoes1"><CssComponente><![CDATA[]]></CssComponente><ListaPresentesInformacoesHTML><![CDATA[<div class="container_descricao_lista">
+	<condicao:fotoprincipal>
+		<div class="foto_lista">
+			<img alt="" src="[A5]" />
+		</div>
+	</condicao:fotoprincipal>
+	<div class="descricao_lista">
+		<h3>[A0]</h3>
+		<span>Data: [A1]</span>
+		<span>Local: [A15],[A16] - [A17] - [A18] - [A19] <condicao:mapa><strong><a href="#">(ver mapa)</a></strong></condicao:mapa></span>
+		<span>
+			[A4]
+		</span>
+	</div>
+	<div class="acoes_lista">
+		<condicao:listaprivada>
+			<a href="[A7]"><img alt="Adicionar Produto" src="imagens/adicionar_produto.png" /></a>
+			<a href="[A10]"><img alt="Editar Evento" src="imagens/editar_evento.png" /></a>
+		</condicao:listaprivada>
+		<condicao:listapublica>
+			<a href="[A7]"><img alt="Adicionar Produto" src="imagens/adicionar_produto.png" /></a>
+			<a href="[A8]"><img alt="Adicionar Convidado" src="imagens/adicionar_convidado.png" /></a>
+			<a href="[A9]"><img alt="Enviar Mensagem" src="imagens/enviar_msg.png" /></a>
+			<a href="[A11]"><img alt="Album de fotos" src="imagens/album_fotos.png" /></a>
+			<a href="[A10]"><img alt="Editar Evento" src="imagens/editar_evento.png" /></a>
+		</condicao:listapublica>
+	</div>
+</div>]]></ListaPresentesInformacoesHTML></ListaPresentesInformacoes><ListaPresentesInfo ID="ListaPresentesInformacoes"><ListaPresentesInformacoesHTML><![CDATA[<div class="bg-box-topo-presentes">
+<div class="container-box-topo-presentes">
+  <img src="imagens/bg-presente-interno-fixo.png" alt="Lista de Presentes" />
+</div>
+</div>
+<div class="container_descricao_lista fechado"> 
+      <condicao:aceitaevento>
+        <div class="box_info_descricao">
+        <div class="container_descricao_lista_conteudo">
+              <condicao:fotoprincipal>
+                <div class="foto_lista">
+                  <img alt="" src="[A5]?width=155&height=120" />
+                </div>
+              </condicao:fotoprincipal>            
+            <div class="descricao_lista">
+              <h3>[A20] <small class="abre_header">(Exibir informações)</small></h3>
+              <condicao:comevento>
+                <p>[A0] - [A1]</p>
+                <span>
+                  <strong>Homenageado(s):</strong> [A0]<br />
+                  <strong>Data:</strong> [A1]<br />
+                  <strong>Local:</strong> [A15],[A16] - [A17] - [A18] - [A19] <condicao:mapa><strong><a href="#" class="ver_mapa">(ver mapa)</a></strong></condicao:mapa></span>
+                <span>
+                    [A4]
+                </span>
+          	  </condicao:comevento>
+             </div>
+          </div>
+        </div>
+        <div class="acoes_lista">
+            <div class="acoes_lista_conteudo">
+              <a href="[A13]"><img alt="Lista de Proutos" src="imagens/bt_voltar_lista-hover.png" /></a>
+              <a href="javascript: void(0)" class="bt_add_produto"><img alt="Adicionar Produto" src="imagens/adicionar_produto.png" /></a>
+              <a href="[A8]"><img alt="Adicionar Convidado" src="imagens/adicionar_convidado.png" /></a>
+              <a href="[A9]"><img alt="Enviar Mensagem" src="imagens/enviar_msg.png" /></a>
+              <a href="[A11]"><img alt="Album de fotos" src="imagens/album_fotos.png" /></a>
+              <a href="[A10]"><img alt="Editar Evento" src="imagens/editar_evento.png" /></a>   
+            </div>
+        </div>
+      </condicao:aceitaevento>
+      <condicao:naoaceitaevento>
+          <div class="container_descricao_lista_conteudo">
+            <div class="descricao_lista">            
+              <h3>[A20]</h3>
+            </div>
+          </div>
+          <div class="acoes_lista">
+            <div class="acoes_lista_conteudo">
+              <a href="[A13]"><img alt="Lista de Proutos" src="imagens/bt_voltar_lista-hover.png" /></a>
+              <a href="javascript: void(0)" class="bt_add_produto"><img alt="Adicionar Produto" src="imagens/adicionar_produto.png" /></a>
+            </div>
+          </div>
+      </condicao:naoaceitaevento>  
+</div>
+
+<div style="display: none;">
+  <div class="lista_mapa">
+      <div class="tit_box_full"><h2>Mapa</h2></div>	
+      [A3]
+  </div>
+  <div class="lista_add_produto">
+    <img src="imagens/animacao.gif" alt="Animação" /><br /><br />
+    <a href="[A7]"><img alt="Adicionar Produto" src="imagens/adicionar_produto.png" /></a>
+  </div>
+</div>
+
+
+<condicao:semevento>
+	<div id="erro">
+    	<div class="lista_erro">
+          	<h2>Você precisa criar um evento e aceitar o contrato para que seus convidados possam visualizar a sua lista.</h2>
+      	</div>
+  	</div>
+</condicao:semevento>
+
+<script>
+  $(function(){
+      $('.ver_mapa').live('click', function() {
+            $.fn.colorbox({inline:true, href:".lista_mapa"});
+            return false;
+      });
+  
+  	  $('.bt_add_produto').live('click', function() {
+            $.fn.colorbox({inline:true, href:".lista_add_produto", overlayClose:false, escKey:false});
+            return false;
+      });	
+
+      $('.abre_header').click(function() {
+            if($(".container_descricao_lista").hasClass("fechado")){
+                $(".container_descricao_lista").removeClass("fechado");
+                $(this).text("(Ocultar informações)")
+            }else{
+                $(".container_descricao_lista").addClass("fechado");
+                $(this).text("(Exibir informações)")
+            };
+      });  
+    });
+</script>]]></ListaPresentesInformacoesHTML></ListaPresentesInfo><ListaPresentesInformacoes ID="listapresentesinformacoes"><ListaPresentesInformacoesHTML><![CDATA[]]></ListaPresentesInformacoesHTML></ListaPresentesInformacoes></ListaPresentesInformacoess></controles></page>

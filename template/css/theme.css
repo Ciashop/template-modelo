@@ -1,0 +1,144 @@
+/* Theme Default By Ciashop */
+
+/* Estrutura */
+
+body{ background: #fff; color: #474747; }
+a{ color: #474747; }
+.bg-layout{ background: #fff; }
+
+
+/* Topo */
+
+.bg-topo{ background: #fff; }
+	.link-topo a, .link-topo{ color: #474747; }
+.logo{ background: url('../imagens/logo.png') no-repeat 0 0 scroll transparent;  }
+.bg-topo input{ background: #fff; border-width: 1px; border-style: solid; border-color: #474747;}
+.bt_buscar_topo{ background: url('../imagens/bt_buscar_topo.png') no-repeat 0 0 scroll transparent; }
+
+/* Rodape */
+
+.bg-newsletter input{ background: #fff; border-width: 1px; border-style: solid; border-color: #474747; }
+.rodape{ background: #fff; }
+
+
+.rodape2{
+    background: #ececec;
+}
+
+/* Bordas */
+
+.borda-produto{	border: 1px solid #ebebeb; }
+
+/* Menus */
+
+.menu-horizontal{ background: #fff;}
+        .borda-menu-horizontal{ border-width: 3px 0; border-style: solid; border-color: #cfcfcf; }
+	.link-menu-horizontal{ color: #474747; border-left: 1px solid #e2e2e2; }
+	.link-filho-menu-horizontal{ color: #5c5c5c; }
+        /*
+        	.bg-menu-todas-categorias{	background: #e2e8ef; }
+	        .link-menu-todas-categorias{ color: #5c5c5c; } 
+        */
+	.link-menu-topo:hover{ background: #bfcbd7; }
+.menu-vertical{ background: #568ac6; color: #fff; }
+	.menu-vertical li:hover{ background: #326aa9; }
+	.link-pai-menu-vertical{ color: #fff; }
+.menu-vertical-secundario{ background: #fff; border-bottom: 4px solid #326aa9;}
+.lista-menu-vertical-secundario:hover{ background: #ffdac0; }
+
+/* Mini Carrinho */
+
+.img-mini-carrinho{
+    background: url("../imagens/btn_carrinho.png") no-repeat center center scroll transparent;
+}
+
+/* Títulos e Textos */
+
+.tit-principal{ background: #326aa9; color: #fff; }
+	.texto-tit-principal{ color: #fff; }
+        .texto-tit-principal2{ color: #474747; }
+.tit-secundario{ background: #eaeaea; }
+.tit-vitrine{ color: #474747; background: #ebebeb; padding: 5px 10px; font-weight: normal;}
+.tit-rodape{ color: #326aa9; }
+.tit-checkout{ color: #326aa9; }
+.tit-navegacao{ background: #474747; color: #fff;}
+    .texto-navegacao{ color: #474747; }
+.box-paginacao{ color: #474747;}    
+.box-paginacao-selecionado{ background: #0f3b69; color: #fff; }
+    .texto-paginacao a{ color: #0f3b69; }
+.tit-produto{ color: #5a5a5a; }
+
+/* Botões */
+
+.bt-primario{ background-color: #167856; color: #fff; }
+    .bg-bt-primario{ background-color: #167856; }
+    .texto-bt-primario{ color: #fff; }
+.bt-secundario{ background-color: #326aa9; color: #fff; }
+    .bg-bt-secundario{ background-color: #326aa9; }
+    .texto-bt-secundario, .texto-bt-secundario a{ color: #fff; }
+.bt-terciario{ background-color: #8a8a8a; color: #fff; }
+    .bg-bt-terciario{ background-color: #8a8a8a; }
+    .texto-bt-terciario{ color: #fff; }
+.bt-especial{ background-color: #568AC6; color: #fff; }
+    .bg-bt-especial{ background-color: #568AC6; }
+    .texto-bt-especial{ color: #fff; }
+
+/* Tags */
+
+.tag-lancamento{ background: #df7f0d; color: #fff;}
+.tag-frete{ background: #0f3b69; color:#fff;}
+.tag-indisponivel{ background: #333; color: #fff; }
+
+/* Vitrines e Produto */
+
+.nome-produto{ color: #474747; }
+.preco-de{ color: #474747; }
+.preco-por{ color: #474747; }
+.preco-parcelado{ color: #474747; }
+.preco-vista{ color: #474747; }
+.texto-parcelamento{ color: #474747; }
+.bg-box-preco-produto{ background: #f0f0f0; }
+
+/* Newsletter */
+
+.newsletter{ background: #ebebeb; border-top: 5px solid #474747 }
+        .texto-newsletter{ color: #474747; }
+.img-newsletter{ background: url("../imagens/img_newsletter.png") no-repeat scroll 0 0 transparent; }
+.bt-cadastrar-news{ background: url('../imagens/bt-newsletter-pe.png') no-repeat center center scroll transparent; }
+
+/* Imgs */
+
+.img-comprar{
+    background: url('../imagens/bt_comprar.png') no-repeat 0 0 scroll transparent;
+}
+
+/* Erros */
+
+.lista_erro{ background-color: #FFF5E1; border: 1px solid #FCE7BB; }
+.lista_sucesso{ background-color: #F1F1F1; border: 1px solid #ccc; }
+
+/* Carrinho */
+
+.carrinho-vazio{ background: url('../imagens/carrinho_vazio.png') no-repeat right bottom scroll transparent; }
+
+/* Passos */
+
+.passo-entrega{ background: url('../imagens/passo_entrega.png') no-repeat 0 0 scroll transparent; }
+.passo-pagamento{ background: url('../imagens/passo_pagamento.png') no-repeat 0 0 scroll transparent; }
+
+/* Convidado */
+
+.compra-express{
+    background: url("../imagens/bg_compra_express.png") no-repeat scroll 250px top ; border-bottom: 3px solid #ccc; }
+
+.tit-compra-express{ color: #326aa9; }
+
+/* Pagamento */
+
+.bg-numero-pedido{
+    background: url("../imagens/bg_numero_pedido.png") no-repeat 0 0 scroll transparent;
+}
+
+.numero-pedido{
+    color: #8A000C;
+}
