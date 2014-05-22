@@ -3,9 +3,7 @@ template-modelo
 
 Estrutura do template
 ----------
-Dentro da pasta template você encontra todos os arquivos necessários para criar um tema. Lá está separado em 7 pastas essênciais, onde estão agrupados arquivos de .ASPX, .CSS, 
-
-.JS, Imagens, Fontes, configurações. 
+Dentro da pasta template você encontra todos os arquivos necessários para criar um tema. Lá está separado em 7 pastas essênciais, onde estão agrupados arquivos de asp.net, css, javascript, imagens, fontes e configurações. 
 
 
 ```
