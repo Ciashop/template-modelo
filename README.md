@@ -37,8 +37,46 @@ Dentro da pasta template você encontra todos os arquivos necessários para cria
 
 
 
-Criando formulário padrão
+Template padrão
 ==========
+
+Estrutura do template
+----------
+Dentro da pasta template você encontra todos os arquivos necessários para criar um tema. Lá está separado em 7 pastas essênciais, onde estão agrupados arquivos de .ASPX, .CSS, 
+
+.JS, Imagens, Fontes, configurações. 
+
+
+```
+| template/
+|
+|-- _ascx/
+|   |-- Controles utilizados na loja
+|
+|-- _configuracoes/
+|   |-- configuracoes.html
+|   |-- configuracoes_salvas.json
+|
+|-- css/
+|   |-- arquivos .CSS
+|   |-- arquivos .CSS.RAZOR
+|
+|-- js/
+|   |-- arquivos .JS
+|
+|-- imagens/
+|   |-- imagens da loja (png,jpg,ico,gif)
+|
+|-- fontes/
+|   |-- fontes utilizadas
+|
+|-- preview/
+|   |-- imagens de posições de banners
+|
+|-- páginas padrões da loja (pg principal, produto, carrinho, etc)
+|
+
+```
 
 Estrutura padrão do formulário
 ----------
@@ -46,17 +84,5 @@ Estrutura padrão do formulário
 
 A estrutura mostrada abaixo cria o layout padrão disponibilizado pela Ciashop, em formato de abas que abrem e fecham.
 
-<fieldset>
-  <h2>Nome da sessão/aba</h2>
-  <table>
-    <tr>
-      <td>
-         <label>Nome dessa configuração</label>
-     </td>
-     <td>
-          ENTRADA DE CAMPO PADRÃO HTML.
-     </td>
-   </tr>
-  </table>
-</fieldset>
+
 
