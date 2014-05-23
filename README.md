@@ -36,19 +36,3 @@ Dentro da pasta template você encontra todos os arquivos necessários para cria
 
 ```
 
-template-modelo
-===============
-
-Estrutura do template
-----------
-Dentro da pasta template você encontra todos os arquivos necessários para criar um tema. Lá está separado em 7 pastas essênciais, onde estão agrupados arquivos de asp.net, css, javascript, imagens, fontes e configurações. 
-
-
-Estrutura padrão do formulário
-----------
-
-
-A estrutura mostrada abaixo cria o layout padrão disponibilizado pela Ciashop, em formato de abas que abrem e fecham.
-
-
-
