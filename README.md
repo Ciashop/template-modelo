@@ -46,18 +46,17 @@ Estrutura padrão do formulário
 
 A estrutura mostrada abaixo cria o layout padrão disponibilizado pela Ciashop, em formato de abas que abrem e fecham.
 
-<pre class="lang-html prettyprint linenums">
-  &lt;<fieldset>&gt;
-  &lt;<h2>Nome da sessão/aba</h2>&gt;
-  &lt;<table>&gt;
-  &lt;<tr>&gt;
-      &lt;<td>&gt;
-         &lt;<label>Nome dessa configuração</label>&gt;
-     &lt;</td>&gt;
-     &lt;<td>&gt;
-          &lt;ENTRADA DE CAMPO PADRÃO HTML.&gt;
-     &lt;</td>&gt;
-   &lt;</tr>&gt;
-  &lt;</table>&gt;
-&lt;</fieldset>&gt;
-&lt;</pre>&gt;
+<fieldset>
+  <h2>Nome da sessão/aba</h2>
+  <table>
+    <tr>
+      <td>
+         <label>Nome dessa configuração</label>
+     </td>
+     <td>
+          ENTRADA DE CAMPO PADRÃO HTML.
+     </td>
+   </tr>
+  </table>
+</fieldset>
+
